@@ -29,6 +29,7 @@ DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['react-django.herokuapp.com',
                  '127.0.0.1:8000',
+                 '127.0.0.1',
                  ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -70,8 +71,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'build'),
-            os.path.join(BASE_DIR, 'staticfiles')
+            os.path.join(BASE_DIR, 'build')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,6 +124,12 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+  # Tell Django where to look for React's static files (css, js)
+  os.path.join(BASE_DIR, "build/static"),
+]
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
