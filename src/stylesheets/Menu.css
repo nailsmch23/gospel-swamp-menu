@@ -217,9 +217,10 @@
 
 .order-button {
     background-color: lightgoldenrodyellow;
-    font-size: medium;
+    font-size: large;
     border: none;
     border-radius: 0.25em;
+    padding: 0.25em;
 }
 
 .cancel-button {
