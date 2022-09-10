@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['react-django.herokuapp.com',
+ALLOWED_HOSTS = ['https://gospel-swamp-menu.herokuapp.com/',
                  '127.0.0.1:8000',
                  '127.0.0.1',
                  ]
