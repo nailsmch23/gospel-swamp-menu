@@ -1,0 +1,172 @@
+body {
+    background-color: #FCF8E8;
+    /*background-color: #F9F9F9;*/
+}
+
+h1 {
+    margin: 25px auto 15px auto;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color1);
+}
+
+.queue-hr {
+    margin: -5px auto;
+    width: 90%;
+
+    border: dashed var(--color2) 15px;
+    border-bottom: none;
+}
+
+.queue-list {
+    display: grid;
+    grid-template-columns: repeat(var(--num-columns), calc(80vw / var(--num-columns)));
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color1);
+}
+
+@media only screen and (max-width: 1700px) {
+    .queue-list {
+        --num-columns: 3;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .queue-list {
+        --num-columns: 2;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .queue-list {
+        --num-columns: 1;
+    }
+}
+
+.tab-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3vh 0;
+    column-gap: 6%;
+}
+
+.queue-tab {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: grey;
+    font-weight: lighter;
+    width: max-content;
+    padding: 0.25em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.queue-tab:hover {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.queue-tab-active {
+    color: var(--color1);
+    font-weight: bold;
+    border-bottom: solid 7px var(--color2);
+}
+
+.outstanding-tab {
+    margin: 0 0.25em 0 auto;
+}
+
+.completed-tab {
+    margin: 0 auto 0 0.25em;
+}
+
+.queue-card {
+    width: min(90%, 30em);
+    margin: 5% auto;
+    border: dashed medium var(--color1);
+}
+
+.queue-card-title {
+    margin: 0.5em auto;
+    width: 85%;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(7vw / var(--num-columns));
+    color: #3F4E4F;
+}
+
+.queue-card-image {
+    display: block;
+    height: calc(30vw / var(--num-columns));
+    margin: 5% auto;
+    position: relative;
+    top: 0;
+}
+
+.queue-card-ingredient-container {
+    color: black;
+    font-weight: bolder;
+    font-size: calc(4vw / var(--num-columns));
+    display: grid;
+    grid-template-columns: 6fr 1fr 10fr;
+    margin: 0.5em auto;
+}
+
+.queue-card-customer {
+    font-size: calc(5vw / var(--num-columns));
+    margin: 0.5em auto;
+    font-style: italic;
+}
+
+.queue-card-ingredient-name {
+    width: 100%;
+    text-align: right;
+}
+
+.queue-card-ingredient-divider {
+    width: 100%;
+    text-align: center;
+}
+
+.queue-card-ingredient-amount {
+    width: 100%;
+    text-align: left;
+}
+
+.queue-card-time {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.queue-card-hr {
+    margin: 15px auto;
+    width: 40%;
+
+    border: groove var(--color2) 3px;
+    border-bottom: none;
+}
+
+.queue-complete-button {
+    position: relative;
+    bottom: 0;
+    border: none;
+    font-size: medium;
+    background-color: var(--color2);
+    margin: 0.7em 0;
+    padding: 0.75em;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.queue-complete-button:hover {
+    outline: solid 7px var(--color1);
+}
+
+
