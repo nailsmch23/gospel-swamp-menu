@@ -28,6 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['https://gospel-swamp-menu.herokuapp.com/',
+                 'gospel-swamp-menu.herokuapp.com',
                  '127.0.0.1:8000',
                  '127.0.0.1',
                  ]
