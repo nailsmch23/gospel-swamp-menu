@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gospel_swamp_menu_backend',
     "corsheaders",
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
