@@ -12,7 +12,7 @@ router.register(r'outstanding', OutstandingOrdersView, 'outstanding')
 router.register(r'completed', CompletedOrdersView, 'completed')
 
 
-app_name = 'gospel_swamp_mobile_menu_backend'
+app_name = 'gospel_swamp_menu_backend'
 urlpatterns = [
     path('', include(router.urls)),
 ]

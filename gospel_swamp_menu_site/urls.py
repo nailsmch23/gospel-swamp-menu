@@ -1,4 +1,4 @@
-"""gospel_swamp_mobile_menu_site URL Configuration
+"""gospel_swamp_menu_site URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -21,7 +21,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('api/', include('gospel_swamp_mobile_menu_backend.urls', namespace="gospel_swamp_mobile_menu_backend")),
+    path('api/', include('gospel_swamp_menu_backend.urls', namespace="gospel_swamp_menu_backend")),
     path('', TemplateView.as_view(template_name="index.html")),
 ]
 
