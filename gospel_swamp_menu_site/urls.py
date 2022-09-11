@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('api/', include('gospel_swamp_menu_backend.urls', namespace="gospel_swamp_menu_backend")),
+
     path('', TemplateView.as_view(template_name="index.html")),
 ]
 
