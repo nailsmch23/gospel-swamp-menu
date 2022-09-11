@@ -52,6 +52,8 @@
     margin: 0 auto;
     width: 80vw;
 
+    padding-bottom: 7em;
+
     /*background-color: #ECB390;*/
 }
 
@@ -90,6 +92,7 @@
 
     margin: 5%;
     width: 90%;
+    padding-bottom: 1em;
 
     background-color: inherit;
     /*background-color: #FCF8E8;*/
@@ -217,10 +220,15 @@
 
 .order-button {
     background-color: lightgoldenrodyellow;
-    font-size: large;
+    font-size: x-large;
     border: none;
     border-radius: 0.25em;
-    padding: 0.25em;
+    padding: 0.5em 3em;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    outline: solid medium var(--color1)
 }
 
 .cancel-button {

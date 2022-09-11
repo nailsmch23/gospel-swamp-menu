@@ -34,7 +34,6 @@ function OrderModal(props) {
                 </label>
                 <img className="order-confirmation-img" alt="goodbye" src={rocks_img} />
                 <input id='customer-name-input' className='order-name-input' placeholder="your name"/>
-                <br/>
                 <button onClick={ handleOrder } className="order-button" >
                     Order
                 </button>
